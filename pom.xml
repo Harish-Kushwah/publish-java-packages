@@ -11,11 +11,13 @@
         <maven.compiler.target>20</maven.compiler.target>
         <exec.mainClass>com.publishjavapackages.Publishjavapackages</exec.mainClass>
     </properties>
-    <dependencies>
-    <dependency>
-  <groupId>com.mycompany.app</groupId>
-  <artifactId>java-maven</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
-    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Harish-Kushwah/publish-java-packages</url>
+        </repository>
+    </distributionManagement>
+  
+
 </project>
